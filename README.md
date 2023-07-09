@@ -3,6 +3,8 @@ This is a react chat application using MERN Stack
 # Node Backend
 Create a node app with express server
 Install packages dotenv, nodemon, express
+# MongoDB
+Use MongoDB atlas to access your project from any device
 # React Frontend
 # Getting Started with Create React App
 
