@@ -7,10 +7,13 @@ const app = express();
 dotenv.config()
 connectDB()
 const PORT = process.env.PORT || 5000
-app.get('/',(req,res)=>{
-    res.send("API is running")
-})
-app.use('/chatApp/user',userRoutes)
+app.use(express.json()); // to accept json data
+
+// app.get("/", (req, res) => {
+//   res.send("API Running!");
+// });
+
+app.use("/chatApp/user", userRoutes);
 // app.get("/chatApp/chats",(req,res)=>{
 //     res.send(chats)
 // })
